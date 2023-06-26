@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -36,3 +36,244 @@
     transform: rotate(360deg);
   }
 }
+.navbar {
+  background-color: rgba(23,26,34,255);
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgba(18, 40, 92, 0.994);
+  border-radius: 1.3rem;
+}
+.line1,.line2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 4.3rem;
+  animation: slide-in 1s ease forwards;
+}
+.line1{
+  color: white;
+}
+.line2{
+  color: #61dafb;
+}
+.summary{
+  color: #616b7a;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  animation: slide-in 1s ease forwards;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about{
+  margin: 0% 10% 0% 10%;
+}
+.section-differentiator {
+  text-align: center;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #61dafb;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid rgb(112, 186, 206);
+  margin: 0 auto;
+  width: 50%;
+}
+.experience{
+  margin-top: 5%;
+}
+
+.experience-box{
+  color: aliceblue;
+  /* background-color: #455265; */
+  border: #282c34;
+  border-radius: 5px;
+  /* padding: 1% 3% 1% 1%; */
+  margin: 2% 10% 2% 10%;
+  text-align: left;
+}
+
+.experience-box > li::marker{
+  color: #61dafb;
+  font-size: 1.2rem;
+}
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  padding-left: 0px; /* Adjust this value as needed */
+}
+.projects-carousel{
+  margin: 0 auto;
+  width: 80%;
+  /* padding: 2%; */
+}
+.project-card{
+  background-color: rgba(23,26,34,255);
+  color: aliceblue;
+  padding: 3%;
+  border-radius: 2rem;
+  border: solid 1px #61dafb;
+}
+.project-title{
+  text-align: center;
+  margin-top: 0%;
+}
+.project-card li::marker{
+  color: #61dafb;
+  font-size: 1.2rem;
+}
+.skills-div{
+  width: 70%;
+  margin-bottom: 3%;
+}
+.skill-button{
+  display: inline-block;
+  /* text-align: center; */
+  border-radius: 0.5rem;
+  padding: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  font-weight: 550;
+  font-size: 0.8rem;
+  border: solid 0.5px #61dafb;
+}
+.skill-name{
+  width: 100%;
+}
+.view-project-button{
+  border: solid 1px #61dafb;
+  border-radius: 0.5rem;
+  background-color: rgba(23,26,34,255);
+  padding: 1%;
+}
+.link-img{
+  height: 80%;
+  width: 3%;
+  display: inline-block;
+}
+.view-project-button a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.view-project-button:hover{
+  background-color: #61dafb;
+  color: #282c34;
+}
+.select-project-category-button{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #282c34;
+  border: solid 1px #61dafb;
+  border-radius: 0.5rem;
+  background-color: rgba(23,26,34,255);
+  padding: 1%;
+  margin-right: 2%;
+}
+.select-project-category-button:hover{
+  background-color: #61dafb;
+  color: #282c34;
+  cursor: pointer;
+}
+.category-buttons{
+  margin: 2%;
+  text-align: center;
+}
+.about-skills{
+  background-color: rgba(23,26,34,255);
+  color: aliceblue;
+  border-radius: 1.3rem;
+  /* height: auto; */
+  /* display: flex; */
+  width: 100%;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 1%;
+  animation: slide-in 1s ease forwards;
+}
+.about-skills .skill-button{
+  margin: 1%;
+  display: inline-block;
+}
+.skill-heading{
+  text-align: center;
+  color: #61dafb;
+  margin-top: 0;
+}
+.contact-line1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.icon {
+  margin-right: 1%; /* Adjust spacing between icons */
+  font-size: 3rem; /* Adjust icon size */
+  color: aliceblue;
+  /* margin-top: 3%; */
+}
+.icon:hover{
+  cursor: pointer;
+}
+.Project{
+  animation: slide-in 1s ease forwards;
+}
+.slide-in {
+  animation: slideInAnimation 1s ease-in-out;
+}
+
+@keyframes slideInAnimation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
